@@ -12,6 +12,14 @@ def init():
     initialize()
     return jsonify(message='db initialized!')
 
+@index_views.route('/hello', methods=['GET'])
+def hello():
+    return jsonify(message='Hello World!')
+
+@index_views.route('/hello2', methods=['GET'])
+def hello():
+    return jsonify(message='Hello kwasi!')
+
 @index_views.route('/health', methods=['GET'])
 def health_check():
     return jsonify({'status':'healthy'})
