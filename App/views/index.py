@@ -17,7 +17,7 @@ def hello():
     return jsonify(message='Hello World!')
 
 @index_views.route('/hello2', methods=['GET'])
-def hello():
+def hellotwo():
     return jsonify(message='Hello kwasi!')
 
 @index_views.route('/health', methods=['GET'])
